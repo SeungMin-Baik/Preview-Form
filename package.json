@@ -1,5 +1,5 @@
 {
-  "name": "preview-form",
+  "name": "boilerplate-project",
   "version": "0.1.0",
   "devDependencies": {
     "@reduxjs/toolkit": "^1.4.0",
@@ -47,10 +47,7 @@
     "start": "cross-env BROWSER=none react-scripts start",
     "build": "CI= GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "yarn build && firebase deploy --only hosting:cantata-nft",
-    "preview-alpha": "yarn build && firebase hosting:channel:deploy preview-alpha",
-    "preview-stage": "yarn build && firebase hosting:channel:deploy preview-stage"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

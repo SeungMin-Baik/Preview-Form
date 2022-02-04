@@ -29,3 +29,4 @@ Previous projects were class-based React. So, create a form using hooks and appl
 ```
 $ yarn start
 ```
+3. Enter <b>localhost:3000</b>
