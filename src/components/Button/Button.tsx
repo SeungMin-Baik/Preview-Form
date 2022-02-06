@@ -6,7 +6,7 @@ interface ButtonProps {
     type?: 'default' | 'white' | 'disabled'
     round?: 'round' /* default 8px */ | 'rectangle'/*0px*/ | 'smooth'/*4px*/ | 'curved' /*16px;*/
     dimmed?: boolean
-    onClick: () => void
+    onClick: Function
     isBubble?: boolean
 }
 
