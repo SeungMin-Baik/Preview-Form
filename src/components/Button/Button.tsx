@@ -7,9 +7,10 @@ interface ButtonProps {
     round?: 'round' /* default 8px */ | 'rectangle'/*0px*/ | 'smooth'/*4px*/ | 'curved' /*16px;*/
     dimmed?: boolean
     onClick: () => void
+    isBubble?: boolean
 }
 
-const Button: React.FC<ButtonProps> = ({ text, type = 'default', dimmed, round = 'smooth', onClick}) => {
+const Button: React.FC<ButtonProps> = ({ text, type = 'default', dimmed, round = 'smooth', onClick, isBubble}) => {
     
     const clickButton = () => {
         if (type === 'disabled' || dimmed) return
@@ -21,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({ text, type = 'default', dimmed, round =
     }
     
     return (
-        <div className={classNames()} onClick={clickButton}>
+        <div className={classNames()} onClick={isBubble ? e => {e.stopPropagation(); clickButton()} : () => clickButton() }>
             <span>{text}</span>
         </div>
     )
