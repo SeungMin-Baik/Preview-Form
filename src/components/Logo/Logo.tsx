@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
     
     return (
         <div className='app-logo' onClick={() => history.replace('/')}>
-            <img className='logo' src={null} alt='logo-symbol'/>
+            <img className='logo' src={logos.logo} alt='logo-symbol'/>
         </div>
     )
 }

@@ -3,8 +3,10 @@
 .app-logo {
     cursor: pointer;
     position: relative;
+    width: 50px;
 
     > .logo {
+        width: 100%;
     }
 
 }
